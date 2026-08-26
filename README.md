@@ -1,28 +1,18 @@
 # Global Disaster Analysis Dashboard | Tableau
 
-An interactive **Tableau dashboard for analyzing global disaster events and their human and economic impact**. The project combines event frequency, deaths, affected populations, economic damage, geographic patterns, and disaster types into one analytical view.
+An interactive **Tableau dashboard analyzing historical disaster events and their human and economic impact**. It brings event frequency, deaths, affected populations, reported damage, disaster types, and geographic patterns into one analytical view.
+
+## Why this project matters
+
+Disaster datasets can reveal very different stories depending on whether you look at **frequency, human impact, or economic damage**. This dashboard makes those dimensions easier to compare so users can identify where disasters occur often, where their consequences are greatest, and how patterns vary by country and disaster type.
 
 ## Live dashboard
 
 **[View the interactive dashboard on Tableau Public](https://public.tableau.com/app/profile/bhaskar.nakka4980/viz/DisasterAnalysis_17869126013330/Globaldashboard)**
 
-## Dashboard preview
-
 ![Global Disaster Analysis Dashboard](images/Disaster%20Analysis%20Dashboard.png)
 
-## What this project analyzes
-
-- Disaster events and frequency over time
-- Deaths and people affected
-- Economic damage
-- Disaster types and severity
-- Country-level impact
-- Geographic distribution of disaster activity
-- The relationship between event frequency and impact
-
 ## Key metrics
-
-The dashboard currently reports these aggregate metrics for the included dataset:
 
 | Metric | Value |
 |---|---:|
@@ -33,35 +23,48 @@ The dashboard currently reports these aggregate metrics for the included dataset
 | Average deaths per event | **1,519** |
 | Average damage per event | **444M** |
 
-> **Data note:** These figures are dashboard aggregates from the supplied dataset. They should not be interpreted as current global disaster totals, and monetary/impact values depend on the source dataset's definitions and coverage.
+> **Data note:** These are aggregate figures from the supplied dataset. They are not current global disaster totals, and reported monetary and impact values depend on the source data's definitions, coverage, and completeness.
+
+## What the dashboard analyzes
+
+- Disaster events and frequency over time
+- Deaths and affected populations
+- Reported economic damage
+- Disaster types and severity
+- Country-level impact
+- Geographic distribution of disaster activity
+- Differences between event frequency and overall impact
 
 ## Business questions
 
-The dashboard helps investigate:
-
 - How has disaster activity changed over time?
 - Which disaster types occur most frequently?
-- Which countries experience the greatest human impact?
+- Which countries show the greatest human impact?
 - Where are reported economic losses highest?
-- Which events combine high frequency with high severity?
-- How does disaster impact vary across countries and disaster types?
+- Which disaster types combine high frequency with high severity?
+- How does impact vary across countries and hazard types?
 
 ## Dashboard views
 
 ### Overview
-Executive KPIs summarizing event count, deaths, affected population, and reported economic damage.
 
-### Time analysis
-Tracks disaster activity and impact across years to identify changes and unusually active periods.
+High-level KPIs summarizing events, deaths, affected population, and reported economic damage.
 
-### Geographic analysis
+### Time Analysis
+
+Tracks disaster activity and impact across years to identify trends and unusually active periods.
+
+### Geographic Analysis
+
 Compares disaster activity and impact across countries.
 
-### Disaster-type analysis
+### Disaster-Type Analysis
+
 Breaks events down by hazard type to compare frequency and impact.
 
-### Human and economic impact
-Separates the two major impact dimensions so users can compare where disasters have the greatest consequences for people and economies.
+### Human & Economic Impact
+
+Separates human consequences from reported economic losses to support a clearer comparison of disaster impact.
 
 ## Dataset
 
@@ -83,11 +86,10 @@ The analysis depends on the definitions, coverage, and completeness of the suppl
 ## Skills demonstrated
 
 - Data analysis
-- Data visualization
 - Geographic analysis
 - Trend analysis
-- KPI design
 - Comparative analysis
+- KPI design
 - Interactive dashboard design
 - Business intelligence
 - Data storytelling
@@ -107,7 +109,7 @@ disaster-dashboard/
 
 ## Scope
 
-This is a portfolio analysis of historical disaster records. It is intended to demonstrate analytical and dashboarding skills, not to provide a live disaster-monitoring or forecasting system.
+This is a portfolio analysis of historical disaster records. It demonstrates analytical and dashboarding skills; it is **not** a live disaster-monitoring, prediction, or forecasting system.
 
 ## Author
 
