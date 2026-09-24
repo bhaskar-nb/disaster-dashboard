@@ -1,10 +1,6 @@
 # Global Disaster Analysis Dashboard | Tableau
 
-An interactive **Tableau dashboard analyzing historical disaster events and their human and economic impact**. It brings event frequency, deaths, affected populations, reported damage, disaster types, and geographic patterns into one analytical view.
-
-## Why this project matters
-
-Disaster datasets can reveal very different stories depending on whether you look at **frequency, human impact, or economic damage**. This dashboard makes those dimensions easier to compare so users can identify where disasters occur often, where their consequences are greatest, and how patterns vary by country and disaster type.
+An interactive **Tableau dashboard analyzing historical natural-disaster records across time, geography, disaster type, human impact, and reported economic damage**. The project turns a large event-level dataset into a visual analysis of where disasters occur, how their impacts differ, and how patterns change over time.
 
 ## Live dashboard
 
@@ -12,85 +8,85 @@ Disaster datasets can reveal very different stories depending on whether you loo
 
 ![Global Disaster Analysis Dashboard](images/Disaster%20Analysis%20Dashboard.png)
 
-## Key metrics
+## Project objectives
 
-| Metric | Value |
-|---|---:|
-| Total disaster events | **15,090** |
-| People affected | **8.542B** |
-| Total deaths | **23M** |
-| Total reported damage | **6.698B** |
-| Average deaths per event | **1,519** |
-| Average damage per event | **444M** |
+The dashboard is designed to answer questions such as:
 
-> **Data note:** These are aggregate figures from the supplied dataset. They are not current global disaster totals, and reported monetary and impact values depend on the source data's definitions, coverage, and completeness.
-
-## What the dashboard analyzes
-
-- Disaster events and frequency over time
-- Deaths and affected populations
-- Reported economic damage
-- Disaster types and severity
-- Country-level impact
-- Geographic distribution of disaster activity
-- Differences between event frequency and overall impact
-
-## Business questions
-
-- How has disaster activity changed over time?
-- Which disaster types occur most frequently?
-- Which countries show the greatest human impact?
+- How does reported disaster activity change over time?
+- Which disaster types appear most frequently in the dataset?
+- Which countries record the largest human impact?
 - Where are reported economic losses highest?
-- Which disaster types combine high frequency with high severity?
-- How does impact vary across countries and hazard types?
+- How do event frequency and impact differ across disaster types?
+- Which countries and hazard categories show notable patterns?
 
-## Dashboard views
+## Dashboard analysis
 
-### Overview
+### Executive Overview
 
-High-level KPIs summarizing events, deaths, affected population, and reported economic damage.
+Summarizes the main measures available in the dataset, including:
+
+- Disaster events
+- People affected
+- Deaths
+- Reported economic damage
 
 ### Time Analysis
 
-Tracks disaster activity and impact across years to identify trends and unusually active periods.
+Explores disaster activity and impact across years to identify long-term patterns and periods with higher recorded activity.
 
 ### Geographic Analysis
 
-Compares disaster activity and impact across countries.
+Compares disaster activity and impact across countries and geographic regions.
 
 ### Disaster-Type Analysis
 
-Breaks events down by hazard type to compare frequency and impact.
+Breaks records down by disaster type and subtype to compare frequency and recorded consequences.
 
 ### Human & Economic Impact
 
-Separates human consequences from reported economic losses to support a clearer comparison of disaster impact.
+Examines deaths, affected populations, and reported damage as separate dimensions of disaster impact.
 
 ## Dataset
 
-The project uses a historical disaster dataset based on **EM-DAT International Disaster Database** country-profile data.
+The repository uses a historical disaster dataset containing country-year records and disaster classifications.
 
-The repository includes:
+Key fields include:
 
-- `data/disaster-events.csv` — source dataset
-- `tableau/Disaster Analysis.twbx` — Tableau workbook
+- Year
+- Country
+- ISO code
+- Disaster group
+- Disaster subgroup
+- Disaster type
+- Disaster subtype
+- Total events
+- Total affected
+- Total deaths
+- Total damage (USD, original)
+- Total damage (USD, adjusted)
+- CPI
 
-The analysis depends on the definitions, coverage, and completeness of the supplied source data.
+The repository data extends through **2023**. The source file contains historical records rather than live disaster information.
 
-## Tools
+> **Important data note:** Aggregate values in this project depend on the supplied dataset and its definitions, coverage, and completeness. Reported damage and impact figures should not be interpreted as current global totals.
 
-- **Tableau** — dashboard development and visual analysis
-- **CSV** — source data
-- **Git / GitHub** — version control and documentation
+## Tools & workflow
+
+**Tableau** → dashboard development, calculated analysis, filtering, geographic views, and data storytelling
+
+**CSV** → source dataset
+
+**Git / GitHub** → version control and project documentation
 
 ## Skills demonstrated
 
 - Data analysis
+- Exploratory data analysis
+- Time-series trend analysis
 - Geographic analysis
-- Trend analysis
-- Comparative analysis
 - KPI design
-- Interactive dashboard design
+- Comparative analysis
+- Interactive dashboard development
 - Business intelligence
 - Data storytelling
 
@@ -107,9 +103,11 @@ disaster-dashboard/
 └── README.md
 ```
 
-## Scope
+## Scope & limitations
 
-This is a portfolio analysis of historical disaster records. It demonstrates analytical and dashboarding skills; it is **not** a live disaster-monitoring, prediction, or forecasting system.
+This is a **portfolio analytics project based on historical disaster records**. It demonstrates Tableau, data analysis, visualization, and storytelling skills.
+
+It is **not** a live disaster-monitoring, early-warning, prediction, forecasting, or emergency-response system.
 
 ## Author
 
